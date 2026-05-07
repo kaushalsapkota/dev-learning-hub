@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task Manager Starter</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <main class="app-shell">
+      <section class="card">
+        <h1>Task Manager Starter</h1>
+        <p class="subtitle">A simple full-stack starter with reusable UI pieces.</p>
+        <form id="task-form" class="task-form">
+          <label for="task-title">Task title</label>
+          <div class="row">
+            <input id="task-title" name="task-title" type="text" placeholder="Example: Review pull request" required />
+            <button type="submit">Add</button>
+          </div>
+        </form>
+        <p id="status-message" class="status-message" aria-live="polite"></p>
+        <ul id="task-list" class="task-list"></ul>
+      </section>
+    </main>
+    <script type="module" src="/app.js"></script>
+  </body>
+</html>

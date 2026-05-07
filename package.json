@@ -1,0 +1,18 @@
+{
+  "name": "dev-learning-hub",
+  "version": "1.0.0",
+  "description": "Beginner-friendly full-stack starter project with a task manager",
+  "main": "backend/server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node backend/server.js",
+    "dev": "node --watch backend/server.js",
+    "test": "node --test"
+  },
+  "keywords": [
+    "starter",
+    "full-stack",
+    "task-manager"
+  ],
+  "license": "MIT"
+}
