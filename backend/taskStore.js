@@ -1,5 +1,7 @@
+import { randomUUID } from 'node:crypto';
+
 const createTask = (title) => ({
-  id: crypto.randomUUID(),
+  id: randomUUID(),
   title,
   completed: false,
   createdAt: new Date().toISOString(),

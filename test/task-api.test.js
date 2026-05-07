@@ -32,6 +32,10 @@ const createTask = async (baseUrl, title = 'Write tests') => {
 
   assert.equal(response.status, 201);
   const payload = await response.json();
+  assert.equal(typeof payload.task.id, 'string');
+  assert.equal(payload.task.title, title);
+  assert.equal(payload.task.completed, false);
+  assert.equal(typeof payload.task.createdAt, 'string');
   return payload.task;
 };
 
